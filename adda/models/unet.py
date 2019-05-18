@@ -55,9 +55,6 @@ def self_attn(x, is_bn, name='self_attn'):
         t = tf.layers.conv2d(t, 1, 1, use_bias=False, activation=tf.nn.relu)
         t = tf.layers.batch_normalization(t, training=is_bn)
         return t
-        # t = tf.layers.conv2d(t, 1, 1, use_bias=True, activation=tf.nn.relu)
-        # t = tf.layers.batch_normalization(t, training=is_bn)
-        # return t
 
 
 @register_model_fn('unet')
@@ -117,9 +114,3 @@ def unet(in_node, is_training=True, layers=4, features_root=32, is_bn=True,
                 in_node = conv2d(conv1, features, filter_size, is_bn)
 
     return in_node, dw_h_convs[layers - 1]
-
-
-unet.default_image_size = 240
-unet.num_channels = 1
-unet.mean = None
-unet.bgr = False

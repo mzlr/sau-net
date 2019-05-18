@@ -3,3 +3,4 @@ DCC/DCC
 MBM/MBM
 VGG/VGG
 *.pyc
+snapshot/*

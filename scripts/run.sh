@@ -5,6 +5,7 @@ export MODEL=unet
 export DATASET=${1:-vgg} # unset or null #adi #vgg #mbm # vgg
 export ITERATION_NUM=${2:-350} # unset or null
 export LEARNING_RATE=0.001
+RUN=${3:-1}
 
 if [ "$DATASET" = "vgg" ]; then
     export BATCH_SIZE=75
@@ -20,9 +21,9 @@ else
 fi
 
 
-for i in {1..10}
+for i in {1..${RUN}}
 do
-    export SEED=$RANDOM #18031 #123232
+    export SEED=$RANDOM
     export MODEL_PATH=snapshot/${MODEL}_${DATASET}_${ITERATION_NUM}_${SEED}
     scripts/train.sh
     scripts/test_bn.sh

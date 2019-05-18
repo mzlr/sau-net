@@ -28,7 +28,6 @@ def preprocessing(inputs, labels, dataset_name, training=False):
 
         if dataset_name == 'mbm':
             inputs = tf.image.random_crop(inputs, [520, 520, 4])
-            # inputs = tf.image.random_crop(inputs, [168, 168, 4])
         elif dataset_name == 'adi':
             inputs = tf.image.random_crop(inputs, [128, 128, 4])
         elif dataset_name == 'vgg' or dataset_name == 'dcc':
