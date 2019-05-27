@@ -32,4 +32,4 @@ For example, the following code will run on `vgg` dataset with 350 iterations fo
 ```
 ./scripts/run.sh vgg 350 3
 ```
-The corresponding model weights and the perdition output can be found in `snapshot/`. The perdition output file `result_test_count` can be read using `shelve`. 
+The corresponding model weights and the perdition output can be found in `snapshot/`. The prediction output file `result_test_count` can be read using `shelve`. 
