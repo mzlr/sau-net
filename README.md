@@ -1,5 +1,5 @@
 # SAU-Net
-This is the source for the paper: *SAU-Net: A Universal Deep Network for Cell Counting*.
+This is the source code for the paper: *SAU-Net: A Universal Deep Network for Cell Counting*.
 
 Our U-Net implementation is based on https://github.com/jakeret/tf_unet and the training pipeline is based on https://github.com/erictzeng/adda.
 
