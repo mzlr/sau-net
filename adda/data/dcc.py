@@ -13,7 +13,7 @@ class DCC(object):
    Images are 296x296x3 images in the range [0, 255].
     """
 
-    data_path = '/projects/ashok/yueguo/multi-adda/DCC'
+    data_path = 'DCC'
 
     data_files = {
             'all': 'DCC',
