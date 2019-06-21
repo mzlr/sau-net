@@ -13,7 +13,7 @@ class ADI(object):
    Images are 296x296x3 images in the range [0, 255].
     """
 
-    data_path = '/projects/ashok/yueguo/multi-adda/ADI'
+    data_path = 'ADI'
 
     data_files = {
             'all': 'ADI',
