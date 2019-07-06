@@ -21,7 +21,7 @@ else
 fi
 
 
-for i in {1..${RUN}}
+for i in $(seq 1 $RUN)
 do
     export SEED=$RANDOM
     export MODEL_PATH=snapshot/${MODEL}_${DATASET}_${ITERATION_NUM}_${SEED}
