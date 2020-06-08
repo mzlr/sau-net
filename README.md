@@ -14,7 +14,20 @@ Our U-Net implementation is based on https://github.com/jakeret/tf_unet and the 
 All the four datasets used in the paper are provided for convenience in 
 https://drive.google.com/drive/folders/1fD19kAhQi2IoGZNkDdB02dJThHilXVdr?usp=sharing
 
-Download and put it in the root folder. The dot annotations are processed using `scipy.ndimage.gaussian_filter`.
+Download and put it in the root folder, like this:
+```
+sau-net
+  |-adda
+  |  |-data
+  |  |-models
+  |-scripts
+  |-tools
+  |-VGG
+  |-MBM
+  ...
+```
+
+The dot annotations are processed using `scipy.ndimage.gaussian_filter`.
 
 Original Datasets:
 - [VGG](http://www.robots.ox.ac.uk/~vgg/research/counting/cells.zip)
