@@ -1,4 +1,13 @@
+<<<<<<< HEAD
 *.pyc
 data/*
 outputs/*
 __pycache__/
+=======
+ADI/ADI
+DCC/DCC
+MBM/MBM
+VGG/VGG
+*.pyc
+snapshot/*
+>>>>>>> 96cd7b5174ef22ee77469efd90d16088ef8644e8
