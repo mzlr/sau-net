@@ -40,7 +40,7 @@ or
 ```
 bash run_3d.sh [3D_dataset] [SELF_ATTN_FLAG] [GPU_ID] 
 ```
-For example, the following code will run on `vgg` dataset with Self-attention module using GPU $$0$$ (the default ID If only one GPU is available). 
+For example, the following code will run on `vgg` dataset with Self-attention module using GPU 0 (the default ID If only one GPU is available). 
 ```
 bash run.sh vgg 1 0
 ```
