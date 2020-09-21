@@ -233,8 +233,8 @@ class Dataset3D(object):
             _parse, num_parallel_calls=tf.data.experimental.AUTOTUNE)
         self.data = self.data.map(
             _pad, num_parallel_calls=tf.data.experimental.AUTOTUNE)
-        # un-comment this if you have large CPU memory to store the data
-        # self.data = self.data.cache()
+        # comment this if you run out of CPU memory to store the data
+        self.data = self.data.cache()
         if self.training:
             self.data = self.data.shuffle(buffer_size=self.train_num)
 
