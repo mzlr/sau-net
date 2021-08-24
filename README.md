@@ -1,6 +1,6 @@
 # SAU-Net
 
-This is the source code for the paper, *SAU-Net: A Universal Network for Cell Counting in 2D and 3D Microscopy Images* (under review) and this paper is an extended version of our prior work [*SAU-Net: A Universal Deep Network for Cell Counting*](https://dl.acm.org/citation.cfm?id=3342153). 
+This is the source code for the paper, [*SAU-Net: A Unified Network for Cell Counting in 2D and 3D Microscopy Images*](https://ieeexplore.ieee.org/document/9456970) and this paper is an extended version of our prior work [*SAU-Net: A Universal Deep Network for Cell Counting*](https://dl.acm.org/citation.cfm?id=3342153). 
 
 Our 2D U-Net implementation is based on https://github.com/jakeret/tf_unet.
 
@@ -48,6 +48,16 @@ Each time the training and test set will be randomly split by a random seed appe
 
 If you find this code useful in your research, please cite our paper:
 ```
+@ARTICLE{9456970,
+  author={Guo, Yue and Krupa, Oleh and Stein, Jason and Wu, Guorong and Krishnamurthy, Ashok},
+  journal={IEEE/ACM Transactions on Computational Biology and Bioinformatics}, 
+  title={SAU-Net: A Unified Network for Cell Counting in 2D and 3D Microscopy Images}, 
+  year={2021},
+  volume={},
+  number={},
+  pages={1-1},
+  doi={10.1109/TCBB.2021.3089608}}
+  
 @inproceedings{Guo:2019:SUD:3307339.3342153,
  author = {Guo, Yue and Stein, Jason and Wu, Guorong and Krishnamurthy, Ashok},
  title = {SAU-Net: A Universal Deep Network for Cell Counting},
